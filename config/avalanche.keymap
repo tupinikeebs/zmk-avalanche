@@ -46,7 +46,9 @@
                   &kp LGUI      &mo 2   &kp SPACE  &kp LEFT_SHIFT  &kp ENTER                      &kp ENTER  &hm RIGHT_SHIFT EQUAL  &kp SPACE  &mo 1   &kp RIGHT_GUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         NAVIGATION {
@@ -80,7 +82,10 @@
         &trans  &trans  &trans  &trans  &trans                  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DEC>;
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
+
