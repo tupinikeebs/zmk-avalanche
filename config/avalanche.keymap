@@ -37,7 +37,7 @@
             bindings = <
               &trans  &trans    &trans    &trans    &trans     &trans                                           &trans            &trans           &trans         &trans        &trans          &trans
               &trans  &kp HOME  &kp UP    &kp END   &trans     &trans                                           &trans            &kp HOME         &trans         &kp END       &trans          &trans
-      &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT &trans     &trans                                           &kp K_SCROLL_UP   &kp LA(LEFT)     &kp UP_ARROW   &kp A         &kp PAGE_UP     &trans         &trans
+      &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT &trans     &trans                                           &kp K_SCROLL_UP   &kp LEFT         &kp UP_ARROW   &kp A         &kp PAGE_UP     &trans         &trans
               &trans  &trans    &trans    &trans    &trans     &trans  &trans  &trans           &trans  &trans  &kp K_SCROLL_DOWN &kp LEFT         &kp DOWN       &kp RIGHT     &kp PAGE_DOWN   &trans
                                 &trans    &trans    &trans     &trans  &trans                   &trans  &trans  &trans            &trans           &trans
             >;
@@ -56,8 +56,8 @@
             bindings = <
               &trans  &trans    &trans        &trans        &trans        &trans                                                    &trans            &trans           &trans         &trans        &trans          &trans
               &trans  &kp HOME  &kp UP        &kp END       &trans        &trans                                                    &trans            &kp HOME         &trans         &kp END       &trans          &trans
-      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT     &trans        &trans                                                    &kp K_SCROLL_UP   &kp LA(LEFT)     &kp UP_ARROW   &kp A         &kp PAGE_UP     &trans         &trans
-              &trans  &trans    &trans        &trans        &trans        &trans      &bl BL_TOG &trans           &trans  &trans   &kp K_SCROLL_DOWN &kp LEFT         &kp DOWN       &kp RIGHT     &kp PAGE_DOWN   &trans
+      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT     &trans        &trans                                                    &kp K_SCROLL_UP   &kp LEFT         &kp UP_ARROW   &kp A         &kp PAGE_UP     &trans         &trans
+              &trans  &trans    &trans        &trans        &trans        &trans      &bl BL_TOG &trans           &trans   &trans   &kp K_SCROLL_DOWN &kp LEFT         &kp DOWN       &kp RIGHT     &kp PAGE_DOWN   &trans
                                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bl BL_DEC  &bl BL_INC                  &trans   &trans   &trans            &trans           &trans
             >;
 
@@ -73,14 +73,14 @@
 //                        |     |     |     |     |     |                              |     |     |     |     |     |
 // ---------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
-                        &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
+              &trans  &trans    &trans        &trans        &trans        &trans                                                    &trans            &trans           &trans         &trans        &trans          &trans
+              &trans  &kp HOME  &kp UP        &kp END       &trans        &trans                                                    &trans            &kp HOME         &trans         &kp END       &trans          &trans
+      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT     &trans        &trans                                                    &kp K_SCROLL_UP   &kp LEFT         &kp UP_ARROW   &kp A         &kp PAGE_UP     &trans         &trans
+              &trans  &trans    &trans        &trans        &trans        &trans      &bl BL_TOG &trans           &trans   &trans   &kp K_SCROLL_DOWN &kp LEFT         &kp DOWN       &kp RIGHT     &kp PAGE_DOWN   &trans
+                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bl BL_DEC  &bl BL_INC                  &trans   &trans   &trans            &trans           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         MISSION {
@@ -92,14 +92,14 @@
 //                        |     |     |     |     |     |                              |     |     |     |     |     |
 // ---------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
-                        &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
+              &trans  &trans    &trans        &trans        &trans        &trans                                                    &trans            &trans           &trans         &trans        &trans          &trans
+              &trans  &kp HOME  &kp UP        &kp END       &trans        &trans                                                    &trans            &kp HOME         &trans         &kp END       &trans          &trans
+      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT     &trans        &trans                                                    &kp K_SCROLL_UP   &kp LEFT         &kp UP_ARROW   &kp A         &kp PAGE_UP     &trans         &trans
+              &trans  &trans    &trans        &trans        &trans        &trans      &bl BL_TOG &trans           &trans   &trans   &kp K_SCROLL_DOWN &kp LEFT         &kp DOWN       &kp RIGHT     &kp PAGE_DOWN   &trans
+                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bl BL_DEC  &bl BL_INC                  &trans   &trans   &trans            &trans           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
