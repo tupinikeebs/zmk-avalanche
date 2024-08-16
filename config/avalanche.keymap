@@ -31,16 +31,22 @@
         macro_vim_save: vim_save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp COLON &kp W>, <&macro_release>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings 
+                = <&macro_press>
+                , <&kp COLON &kp W>
+                , <&macro_release>
+                ;
 
             label = "VIM_SAVE";
-            wait-ms = <40>;
-            tap-ms = <40>;
         };
 
         macro_previous_folder: macro_previous_folder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
             bindings =
                 <&macro_press>,
                 <&kp DOT &kp DOT &kp FSLH>,
@@ -124,3 +130,4 @@
         };
     };
 };
+
