@@ -33,11 +33,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <5>;
-            bindings 
-                = <&macro_press>
-                , <&kp COLON &kp W>
-                , <&macro_release>
-                ;
+            bindings = <&macro_press>, <&kp COLON &kp W>, <&macro_release>;
 
             label = "VIM_SAVE";
         };
@@ -47,11 +43,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <5>;
-            bindings =
-                <&macro_press>,
-                <&kp DOT &kp DOT &kp FSLH>,
-                <&macro_release>;
-
+            bindings = <&kp DOT &kp DOT &kp FSLH>;
             label = "MACRO_PREVIOUS_FOLDER";
         };
     };
@@ -130,4 +122,3 @@
         };
     };
 };
-
