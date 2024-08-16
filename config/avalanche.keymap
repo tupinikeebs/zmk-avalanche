@@ -31,7 +31,7 @@
         macro_vim_save: vim_save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp COLON &kp W &kp RET>;
+            bindings = <&macro_press>, <&kp COLON &kp W>;
 
             label = "VIM_SAVE";
             wait-ms = <40>;
@@ -41,7 +41,7 @@
         macro_previous_folder: macro_previous_folder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp DOT &kp DOT &kp FSLH &kp RET>;
+            bindings = <&macro_press>, <&kp DOT &kp DOT &kp FSLH>;
 
             label = "MACRO_PREVIOUS_FOLDER";
         };
