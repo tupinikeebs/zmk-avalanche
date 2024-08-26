@@ -5,25 +5,25 @@
  */
 
 #include "custom_status_screen.h"
-// #include "widgets/dino.h"
-// #include "widgets/battery_status.h"
-// #include "widgets/modifiers.h"
-// #include "widgets/bongo_cat.h"
+#include "widgets/dino.h"
+#include "widgets/battery_status.h"
+#include "widgets/modifiers.h"
+#include "widgets/bongo_cat.h"
 #include "widgets/layer_status.h"
-// #include "widgets/output_status.h"
-// #include "widgets/hid_indicators.h"
+#include "widgets/output_status.h"
+#include "widgets/hid_indicators.h"
 // #include "widgets/snake.h"
 
 #include <zephyr/logging/log.h>
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 
-// static struct zmk_widget_dino dino_widget;
-// static struct zmk_widget_output_status output_status_widget;
+static struct zmk_widget_dino dino_widget;
+static struct zmk_widget_output_status output_status_widget;
 static struct zmk_widget_layer_status layer_status_widget;
-// static struct zmk_widget_peripheral_battery_status peripheral_battery_status_widget;
-// static struct zmk_widget_modifiers modifiers_widget;
-// static struct zmk_widget_bongo_cat bongo_cat_widget;
+static struct zmk_widget_peripheral_battery_status peripheral_battery_status_widget;
+static struct zmk_widget_modifiers modifiers_widget;
+static struct zmk_widget_bongo_cat bongo_cat_widget;
 // static struct zmk_widget_snake snake_widget;
 
 #if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
@@ -37,7 +37,7 @@ lv_obj_t *zmk_display_status_screen() {
     screen = lv_obj_create(NULL);
 
     lv_style_init(&global_style);
-    lv_style_set_text_font(&global_style, &lv_font_montserrat_30);
+    lv_style_set_text_font(&global_style, &lv_font_montserrat_12);
     lv_obj_add_style(screen, &global_style, LV_PART_MAIN);
 
     // ############# NEW WIDGETS #############
