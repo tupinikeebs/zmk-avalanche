@@ -5,13 +5,13 @@
  */
 
 #include "custom_status_screen.h"
-#include "widgets/dino.h"
-#include "widgets/battery_status.h"
-#include "widgets/modifiers.h"
+// #include "widgets/dino.h"
+// #include "widgets/battery_status.h"
+// #include "widgets/modifiers.h"
 #include "widgets/bongo_cat.h"
 #include "widgets/layer_status.h"
-#include "widgets/output_status.h"
-#include "widgets/hid_indicators.h"
+// #include "widgets/output_status.h"
+// #include "widgets/hid_indicators.h"
 // #include "widgets/snake.h"
 
 #include <zephyr/logging/log.h>
