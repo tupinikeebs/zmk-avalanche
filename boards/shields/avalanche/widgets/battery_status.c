@@ -249,8 +249,8 @@ void print_percentage(uint8_t digit, uint16_t x, uint16_t y, uint16_t scale, uin
     uint16_t first_num = digit / 10;
     uint16_t second_num = digit % 10;
 
-    uint16_t width = 5;
-    uint16_t height = 8;
+    // uint16_t width = 5;
+    // uint16_t height = 8;
     print_bitmap(scaled_bitmap_1, num_bitmaps[first_num], x + 0, y, font_width, font_height, scale, num_color, bg_color);
     print_bitmap(scaled_bitmap_1, num_bitmaps[second_num], x + 30, y, font_width, font_height, scale, num_color, bg_color);
     print_bitmap(scaled_bitmap_1, percentage_bitmap, x + 60, y, font_width, font_height, scale, num_color, bg_color);
@@ -316,3 +316,4 @@ int zmk_widget_peripheral_battery_status_init(struct zmk_widget_peripheral_batte
 lv_obj_t *zmk_widget_peripheral_battery_status_obj(struct zmk_widget_peripheral_battery_status *widget) {
     return widget->obj;
 }
+

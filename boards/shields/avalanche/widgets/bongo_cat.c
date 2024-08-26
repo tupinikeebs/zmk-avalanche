@@ -6,7 +6,7 @@
 
 #include <zephyr/kernel.h>
 #include <zephyr/bluetooth/services/bas.h>
-
+ #include <lvgl.h>
 #include <zephyr/logging/log.h>
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
@@ -146,3 +146,4 @@ int zmk_widget_bongo_cat_init(struct zmk_widget_bongo_cat *widget, lv_obj_t *par
 lv_obj_t *zmk_widget_bongo_cat_obj(struct zmk_widget_bongo_cat *widget) {
     return widget->obj;
 }
+
