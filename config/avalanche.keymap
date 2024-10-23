@@ -98,11 +98,11 @@
             // ---------------------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&kp CAPS  &kp F1    &kp F2    &kp F3    &kp F4              &kp F5                  &kp F6  &kp F7  &kp F8        &kp F9        &kp F10       &kp PRINTSCREEN
-&trans    &kp HOME  &kp UP    &kp END   &macro_vim_replace  &trans                  &trans  &kp N7  &kp N8        &kp N9        &trans        &trans
-&trans    &trans    &kp LEFT  &kp DOWN  &kp RIGHT           &trans  &trans                  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans           &trans  &trans
-&trans    &trans    &trans    &trans    &trans              &trans  &trans  &trans  &trans  &trans  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &trans  &trans
-          &trans    &trans    &trans    &trans              &trans                  &trans  &trans  &trans        &trans        &trans
+&none  &kp F1    &kp F2    &kp F3    &kp F4              &kp F5                          &kp F6        &kp F7     &kp F8        &kp F9        &kp F10       &kp PRINTSCREEN
+&none  &kp HOME  &kp UP    &kp END   &macro_vim_replace  &none                           &kp ASTERISK  &kp N7     &kp N8        &kp N9        &kp PLUS      &none
+&none  &none     &kp LEFT  &kp DOWN  &kp RIGHT           &none            &none                        &kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS        &none      &none
+&none  &none     &none     &none     &none               &macro_vim_save  &trans  &none  &none         &trans     &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp EQUAL  &none
+       &trans    &trans    &trans    &trans              &trans                          &trans        &trans     &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -110,11 +110,11 @@
 
         SYMBOLS {
             bindings = <
-&trans           &trans     &trans           &trans            &trans             &trans                             &trans         &trans     &trans                  &trans                &trans                 &trans
-&trans           &kp APOS   &kp LESS_THAN    &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp DOT                            &kp AMPERSAND  &kp TILDE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET     &kp PERCENT            &trans
-&macro_vim_save  &trans     &kp EXCLAMATION  &kp MINUS         &kp PLUS           &kp EQUAL        &kp HASH                         &kp PIPE   &kp COLON               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION     &trans       &trans
-&trans           &kp CARET  &kp SLASH        &kp ASTERISK      &kp BACKSLASH      &macro_vim_save  &trans    &trans  &trans         &trans     &macro_previous_folder  &kp DOLLAR            &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp AT_SIGN  &trans
-                 &trans     &trans           &trans            &kp PRINTSCREEN    &trans                             &trans         &kp CAPS   &trans                  &trans                &trans
+&trans           &trans     &trans             &trans      &trans         &trans                              &trans         &trans     &trans            &trans                &trans                 &trans
+&trans           &kp APOS   &kp DOUBLE_QUOTES  &kp ASTRK   &kp LESS_THAN  &kp GREATER_THAN                    &kp AMPERSAND  &kp TILDE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PERCENT            &trans
+&macro_vim_save  &trans     &kp EXCLAMATION    &kp MINUS   &kp PLUS       &kp EQUAL         &kp HASH                         &kp PIPE   &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION     &trans       &trans
+&trans           &kp CARET  &kp COMMA          &kp PERIOD  &kp BACKSLASH  &kp GRAVE         &trans    &trans  &trans         &trans     &kp SLASH         &kp DOLLAR            &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp AT_SIGN  &trans
+                 &trans     &trans             &trans      &trans         &trans                              &trans         &trans     &trans            &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
