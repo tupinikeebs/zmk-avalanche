@@ -85,7 +85,9 @@
               &kp LEFT_GUI  &mo 3   &kp SPACE  &kp LEFT_SHIFT  &kp ENTER                      &kp ENTER  &kp RIGHT_SHIFT  &kp SPACE  &tog 2  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp 0 0>;
         };
 
         CONFIG {
@@ -130,6 +132,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
